@@ -20,16 +20,17 @@ header {
 
 .headerIzq {
     color: #511C29;
-    font-size: xx-large;
+    font-size: 30px;
 }
 
 .headerDer {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .headerDer a {
     text-decoration: none;
     color: #511C29;
-    font-size: xx-large;
+    font-size: 50px;
 }
