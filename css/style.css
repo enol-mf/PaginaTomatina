@@ -2,6 +2,8 @@ body {
     background-image: url('../imagenes/Tomatina_2006.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
+    cursor: url('../imagenes/puntero-removebg-preview.png'), auto;
+
 }
 
 .espacioArriba{
