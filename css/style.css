@@ -1,38 +1,90 @@
 body {
-    background-image: url('../imagenes/Tomatina_2006.jpg');
+    background-image: url('../imagenes/2008-08-27-12.09.21-1.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
+    background-attachment: fixed;
     cursor: url('../imagenes/puntero.png'), auto;
-
+    background-color: #A29C9B ;
+    padding-top: 150px;
 }
-
-.espacioArriba{
-    height: 150px;
+h1, h2, h3, p {
+    padding-left: 15px;
+    padding-right: 15px;
 }
-
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+    justify-content: space-between; 
     height: 150px;
-    background-color: rgba(240, 248, 255, 0.5);
-}
+    background-color: rgba(240, 248, 255, 0.35);
 
+    position: fixed;              /* lo fija en la pantalla */
+    top: 0;                       /* arriba de todo */
+    left: 0;                      /* desde el borde izquierdo */
+    width: 100%;                  /* ocupa todo el ancho */
+    z-index: 1000;                /* lo pone por encima de otros elementos */
+    
+}
 .headerIzq {
     color: #511C29;
     font-size: 30px;
 }
-
 .headerDer {
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
-
 .headerDer a {
     text-decoration: none;
     color: #511C29;
     font-size: 50px;
+    border: solid 3px #511C29;
+    border-radius: 25px;
+    height: 65px;
+
+    background-color: #DB324D;
+}
+.fondoHistoria1, .fondoHistoria2, .fondoHistoria3 {
+    background-color: rgba(240, 248, 255, 0.35);
+}
+.historia h2, h3,  p {
+    color: #511C29;
+}
+.historia h2, h3 {
+    font-size: 40px;
+}
+.historia p {
+    font-size: 25px;
+}
+.ir {
+   background-color: rgba(240, 248, 255, 0.35);
+   color: #511C29; 
+}
+.ir h3 {
+    font-size: 40px;
+}
+.ir p {
+    font-size: 25px;
+}
+
+.normas h2 {
+    font-size: 50px;
+    color: #511C29;
+    background-color: rgba(240, 248, 255, 0.35);
+}
+.columnas {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.que-llevar, .que-no-llevar, .comportamiento, .consejos-adicionales {
+    background-color: rgba(240, 248, 255, 0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.que-llevar li, .que-no-llevar li, .comportamiento li, .consejos-adicionales li {
+    color: #511C29;
+    font-size: 25px;
 }
