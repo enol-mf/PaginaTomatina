@@ -3,7 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-attachment: fixed;
-    cursor: url('../imagenes/puntero.png'), auto;
+    cursor: url('../imagenes/cursor.png'), auto;
     background-color: #A29C9B ;
     padding-top: 150px;
 }
@@ -20,7 +20,7 @@ header {
 
     position: fixed;
     top: 0;
-    left: 0;
+    right: 5px;
     width: 100%;
     z-index: 1000;                
     
