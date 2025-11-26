@@ -18,11 +18,11 @@ header {
     height: 150px;
     background-color: rgba(240, 248, 255, 0.35);
 
-    position: fixed;              /* lo fija en la pantalla */
-    top: 0;                       /* arriba de todo */
-    left: 0;                      /* desde el borde izquierdo */
-    width: 100%;                  /* ocupa todo el ancho */
-    z-index: 1000;                /* lo pone por encima de otros elementos */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;                
     
 }
 .headerIzq {
