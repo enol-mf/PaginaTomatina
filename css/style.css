@@ -88,3 +88,43 @@ header {
     color: #511C29;
     font-size: 25px;
 }
+@media (max-width:480px) {
+    body {
+        background-color: #DB324D;
+        background-size: 100%;
+        background-image: url();
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        background-color: rgba(240, 248, 255, 0.35);
+        position:absolute;
+        top: 1%;
+        right: 2%;
+        left: 2%;
+        width: 96%;
+        z-index: 1000;  
+    }
+    .headerIzq h1{
+        font-size:40px;
+    }
+    .headerDer {
+        height: 150px;
+        min-height: 50px;
+    }
+    .headerDer a{
+        font-size: 20px;
+        height: 25px;
+
+    }
+    .columnas {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px ) {
+    body {
+        background-color: yellow;
+    }
+}
