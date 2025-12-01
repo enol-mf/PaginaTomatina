@@ -5,7 +5,9 @@ body {
     background-attachment: fixed;
     cursor: url('../imagenes/cursor.png'), auto;
     background-color: #A29C9B ;
-    padding-top: 150px;
+}
+.headerDer a:hover, img:hover {
+    cursor: url('../imagenes/splashed.png'), pointer;
 }
 h1, h2, h3, p {
     padding-left: 15px;
@@ -17,31 +19,25 @@ header {
     justify-content: space-between; 
     height: 150px;
     background-color: rgba(240, 248, 255, 0.35);
-
-    position: fixed;
-    top: 0;
-    right: 5px;
-    width: 100%;
-    z-index: 1000;                
-    
 }
 .headerIzq {
     color: #511C29;
-    font-size: 30px;
+}
+.headerIzq h1 {
+    font-size: 45px;
 }
 .headerDer {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    padding-right: 20px;
 }
 .headerDer a {
     text-decoration: none;
     color: #511C29;
-    font-size: 50px;
+    font-size: 30px;
     border: solid 3px #511C29;
     border-radius: 25px;
-    height: 65px;
-
     background-color: #DB324D;
 }
 .fondoHistoria1, .fondoHistoria2, .fondoHistoria3 {
@@ -99,12 +95,6 @@ header {
         flex-direction: column;
         height: 150px;
         background-color: rgba(240, 248, 255, 0.35);
-        position:absolute;
-        top: 1%;
-        right: 2%;
-        left: 2%;
-        width: 96%;
-        z-index: 1000;  
     }
     .headerIzq h1{
         font-size:40px;
@@ -136,6 +126,48 @@ header {
 }
 @media (min-width: 481px) and (max-width: 768px ) {
     body {
-        background-color: yellow;
+        background-color: #DB324D;
+        background-image: none;
+        background-size: 100%;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        background-color: rgba(240, 248, 255, 0.35);
+    }
+    .headerIzq h1{
+        font-size:40px;
+    }
+    .headerDer {
+        height: 150px;
+        min-height: 50px;
+    }
+    .headerDer a{
+        font-size: 20px;
+        height: 25px;
+    }
+    .historia img:first-of-type {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .columnas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    .historia img {
+        width: 50%;
+        height: auto;
+        display: block;
+    }
+    .historia img:nth-of-type(odd) {
+        float: left;
+    }
+    .historia img:nth-of-type(even) {
+        float: right;
     }
 }
+
+
